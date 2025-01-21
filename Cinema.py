@@ -88,7 +88,7 @@ class Customer():
             print(rsrv)
 
 class VIPCustomer(Customer):
-    def __init__(self, first_name, last_name):
+    def __init__(self, first_name:str, last_name:str):
         #The class is iniciated
         super().__init__(first_name, last_name)
     def get_discounted_price(self, price:int) -> int:
